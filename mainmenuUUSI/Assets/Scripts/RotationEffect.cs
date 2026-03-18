@@ -10,6 +10,8 @@ public class RotationEffect : MonoBehaviour
     {
         float tilt = Mathf.Sin(Time.time * speed) * angle;
         //Debug.Log(tilt);
-        transform.localRotation = Quaternion.Euler(tilt, 0, 0);
+
+        transform.localRotation = Quaternion.Euler(0, 0, tilt);
+
     }
 }
