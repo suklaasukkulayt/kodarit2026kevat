@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 94258722}
   - component: {fileID: 94258724}
   - component: {fileID: 94258723}
+  - component: {fileID: 94258725}
   m_Layer: 5
   m_Name: QuitText
   m_TagString: Untagged
@@ -255,6 +256,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94258721}
   m_CullTransparentMesh: 1
+--- !u!114 &94258725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94258721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee73854ba74033c4f9c14bfd22217976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectionHover
+  selector: {fileID: 1040847345}
+  index: 2
 --- !u!1 &174359276
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +356,7 @@ GameObject:
   - component: {fileID: 304189954}
   - component: {fileID: 304189956}
   - component: {fileID: 304189955}
+  - component: {fileID: 304189957}
   m_Layer: 5
   m_Name: ScenesText
   m_TagString: Untagged
@@ -466,6 +482,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304189953}
   m_CullTransparentMesh: 1
+--- !u!114 &304189957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304189953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee73854ba74033c4f9c14bfd22217976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectionHover
+  selector: {fileID: 1040847345}
+  index: 0
 --- !u!1 &471678941
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +507,7 @@ GameObject:
   - component: {fileID: 471678942}
   - component: {fileID: 471678944}
   - component: {fileID: 471678943}
+  - component: {fileID: 471678945}
   m_Layer: 5
   m_Name: SettingsText
   m_TagString: Untagged
@@ -602,6 +633,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471678941}
   m_CullTransparentMesh: 1
+--- !u!114 &471678945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471678941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee73854ba74033c4f9c14bfd22217976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectionHover
+  selector: {fileID: 1040847345}
+  index: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +941,8 @@ MonoBehaviour:
   - {fileID: 304189955}
   - {fileID: 471678943}
   - {fileID: 94258723}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &1040847346
 Transform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
