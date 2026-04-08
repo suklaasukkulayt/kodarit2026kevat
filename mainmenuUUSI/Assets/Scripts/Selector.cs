@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 
 public class Selector : MonoBehaviour
@@ -53,13 +55,33 @@ public class Selector : MonoBehaviour
 
     public void ActivateItem(int i)
     {
-        Debug.Log("Selcted: " + items[i].text);
+        Debug.Log("Selected: " + items[i].text);
+        if(i == 0)
+        {
+           StartCoroutine(ChangeToMyScene("PikkupelitMenu")); 
+        }
+
+        if (i == 1)
+        {
+            StartCoroutine(ChangeToMyScene("Settings")); 
+        }
+
+        if (i == 2)
+        {
+            StartCoroutine(ChangeToMyScene("MainMenu")); 
+        }
     }
 
     public void SetIndex(int newIndex)
     {
         index = newIndex;
         UpdateColors();
+    }
+
+    private IEnumerator ChangeToMyScene(string sceneName)
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(sceneName);
     }
 
 }
